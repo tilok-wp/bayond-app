@@ -1,26 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import PrivateRoute from './Authentication/PrivateRoute';
-import Blogs from './Pages/Blogs/Blogs';
-import AddReview from './Pages/Dashboard/AddReview';
-import Dashboard from './Pages/Dashboard/Dashboard';
-import MyOrder from './Pages/Dashboard/MyOrder';
-import MyProfile from './Pages/Dashboard/MyProfile';
-import Home from './Pages/Home/Home';
-import Products from './Pages/Home/Products';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
-import Purchase from './Pages/Purchase/Purchase';
-import Footer from './Pages/Shared/Footer';
-import Navbar from './Pages/Shared/Navbar';
 import NotFound from './Pages/Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ManageProducts from './Pages/Dashboard/ManageProducts';
-import ManageAllOrders from './Pages/Dashboard/ManageAllOrders';
-import MakeAdmin from './Pages/Dashboard/MakeAdmin';
-import AddProduct from './Pages/Dashboard/AddaProduct';
-import Payment from './Pages/Dashboard/Payment';
-import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
