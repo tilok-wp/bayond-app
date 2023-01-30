@@ -13,6 +13,7 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     color: black; 
+    z-index: -1;
 
   }
   
@@ -47,6 +48,7 @@
     background-color: rgb(212, 71, 71);
     padding: 5px;
     border-radius: 50%;
+    z-index: 100;
   }
   .hide {
     display: none;
@@ -105,4 +107,16 @@
   .menu_container .link {
     padding-left: 20px;
     /* border-bottom: #fff 0.5px solid; */
+  }
+
+  /* .nav-bg {
+    width: 100%;
+  } */
+
+  .info-image {
+    margin-left: -70px;
+  }
+
+  .package-list {
+    align-items: start;
   }

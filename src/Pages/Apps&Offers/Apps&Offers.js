@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar';
+import DashboardNav from '../Shared/DashboardNav';
 import gusto from '../../Assets/images/apps/gusto-logo.svg';
 import newity from '../../Assets/images/apps/newity-logo.svg';
 

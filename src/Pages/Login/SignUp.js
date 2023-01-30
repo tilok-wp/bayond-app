@@ -43,7 +43,7 @@ const SignUp = () => {
     }
     return (
         <div>
-            <div class="navbar bg-teal-600 text-white px-14">
+            <div class="DashboardNav bg-teal-600 text-white px-14">
   <div class="flex-1">
     <a class="btn btn-ghost normal-case text-xl">beyond</a>
   </div>

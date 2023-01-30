@@ -15,6 +15,11 @@ import Tax from './Pages/Tax/Tax';
 import Documents from './Pages/Documents/Documents';
 import Contacts from './Pages/Contacts/Contacts';
 import AppsOffers from './Pages/Apps&Offers/Apps&Offers';
+import SignUp3 from './Pages/Dashboard/SignUp.js/SignUp3';
+import SignUp4 from './Pages/Dashboard/SignUp.js/SignUp4';
+import SignUp1 from './Pages/Dashboard/SignUp.js/SignUp1';
+import SignUp2 from './Pages/Dashboard/SignUp.js/SignUp2';
+// import Menu from './Pages/menu/Menu';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -24,17 +29,23 @@ function App() {
 
   return (
     <div className='lg:w-full'>      
+        <Routes>
+        <Route path='/login' element={<Login />} />
+        
+        {/* <Route path='/myPortfolio' element={<MyPortfolio />} />           */}
+        <Route path='/signup' element={<SignUp1 />} />
+        <Route path='/signup2' element={<SignUp2 />} />
+        <Route path='/signup3' element={<SignUp3 />} />
+        <Route path='/signup4' element={<SignUp4 />} />
+        </Routes>
       <Dashboard>
-      {/* <Navbar  className='max-w-7xl mx-auto'> */}
+      {/* <DashboardNav  className='max-w-7xl mx-auto'> */}
       <Routes>
         {/* Public Route */}
         {/* <Route path='/' element={<Home />} /> */}
         {/* <Route path='/products' element={<Products />} />  */}
         {/* <Route path='/blogs' element={<Blogs />} />           */}
         {/* <Route path='/' element={<Dashboard />}></Route> */}
-        <Route path='/login' element={<Login />} />
-        {/* <Route path='/myPortfolio' element={<MyPortfolio />} />           */}
-        <Route path='/signup' element={<SignUp />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Overview />}></Route>
         <Route path='/overview' element={<Overview />}></Route>
@@ -60,7 +71,7 @@ function App() {
       </Routes>
       </Dashboard>
       {/* <Footer></Footer> */}
-      {/* </Navbar> */}
+      {/* </DashboardNav> */}
       <ToastContainer />
 
     </div>

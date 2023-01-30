@@ -1,45 +1,44 @@
 import { NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
-import { BiAnalyse, BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+import { MdGridView, MdPermContactCalendar } from "react-icons/md";
+import { BiBarChart } from "react-icons/bi";
+import { AiFillDollarCircle, AiOutlineRight, AiOutlineStar } from "react-icons/ai";
+import { BsWindowDock } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import DashboardMenu from "./DashboardMenu";
 import "./Dashboard.css"
-import Navbar from "../Shared/Navbar";
+import DashboardNav from "../Shared/DashboardNav";
+import Navbar1 from "../Shared/Navbar1";
 const routes = [  
   {
     path: "/"||"overview",
     name: "Overview",
-    icon: <FaUser />,
+    icon: <MdGridView />,
   },
   {
     path: "/report",
     name: "Report",
-    icon: <MdMessage />,
+    icon: <BiBarChart />,
   },
   {
     path: "/tax",
     name: "Tax",
-    icon: <BiAnalyse />,
+    icon: <AiFillDollarCircle />,
   },
   {
     path: "/documents",
     name: "Documents",
-    icon: <AiTwotoneFileExclamation />,    
+    icon: <BsWindowDock />,    
   },
   {
     path: "/contacts",
     name: "Contacts",
-    icon: <BsCartCheck />,
+    icon: <MdPermContactCalendar />,
   },
   {
     path: "/apps&offers",
     name: "Apps & Offers",
-    icon: <BiCog />,
+    icon: <AiOutlineStar />,
     exact: true,
   }
 ];
@@ -67,6 +66,7 @@ const Dashboard = ({ children }) => {
 
   return (
     <>
+    <Navbar1 />
       <div className="main-container">
         <motion.div
           animate={{
@@ -96,7 +96,7 @@ const Dashboard = ({ children }) => {
             </AnimatePresence>
 
             <div className="bars">
-              <FaBars onClick={toggle} />
+              <AiOutlineRight onClick={toggle} />
             </div>
           </div>
           <section className="routes">
@@ -140,8 +140,8 @@ const Dashboard = ({ children }) => {
         </motion.div>
 
         <main>
-          <Navbar />
-          <div className="">
+          <DashboardNav className="w-full" />
+          <div className="w-full">
           {children}
           </div>
           </main>

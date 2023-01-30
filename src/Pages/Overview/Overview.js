@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar';
 import "./Overview.css"
 
 const Overview = () => {
     return (
         <div className='container'>
-            {/* <Navbar></Navbar> */}
             <div className='mt-6 px-6 py-8 bg-image text-white'>
                 <h1 className='py-5'>Your onboarding is scheduled!</h1>
             </div>
@@ -22,8 +20,7 @@ const Overview = () => {
                     <h1 className='text-2xl mt-10'>... and the desire to offload <br />bookkeeping!</h1>
                 </div>                
                 <div className='pl-16'>
-                    <h1 className='text-2xl mb-8'>Welcome Video</h1>
-                    {/* <video src="https://www.youtube.com/watch?v=J2CQAW446gs&list=RDJ2CQAW446gs&start_radio=1"></video> */}
+                    <h1 className='text-2xl mb-8'>Welcome Video</h1>                    
                     <iframe className='w-full h-80' src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
                     </iframe>
 

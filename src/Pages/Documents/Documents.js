@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar';
+import DashboardNav from '../Shared/DashboardNav';
 
 const Documents = () => {
     return (

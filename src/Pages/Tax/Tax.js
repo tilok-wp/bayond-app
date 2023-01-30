@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar';
+import DashboardNav from '../Shared/DashboardNav';
 
 const Tax = () => {
     return (
@@ -31,16 +31,16 @@ const Tax = () => {
         <tr class="bg-white border-b dark:bg-gray-200 dark:border-gray-200">
             
             <td class="px-10 py-4">
-                
+                *
             </td>
             <td class="px-10 py-4">
-                
+                *
             </td>
             <td class="px-10 py-4">
                 No Data...
             </td>
             <td class="px-10 py-4">
-                
+                *
             </td>
         </tr>
         
